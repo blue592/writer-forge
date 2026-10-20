@@ -1,0 +1,10 @@
+{
+  "name": "writer-forge",
+  "version": "0.1.0",
+  "description": "Local-first, copyright-safe writing workspace with genre templates and story bible tools.",
+  "type": "module",
+  "bin": { "writer-forge": "src/cli.js" },
+  "scripts": { "test": "node --test" },
+  "license": "MIT"
+}
+
