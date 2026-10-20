@@ -1,6 +1,6 @@
 # Writer Forge — 작가를 위한 오픈소스 작업실
 
-영화 시나리오, 블로그 글, 시, 수필, 어린이 동화, 판타지 소설을 하나의 로컬 프로젝트 형식으로 관리하는 독립 오픈소스입니다.
+영화 시나리오, 블로그 글, 시, 수필, 어린이 동화, 판타지 소설에 더해 이력서, 광고 글, 문자 마케팅, 발표문, 보고서를 하나의 로컬 프로젝트 형식으로 관리하는 독립 오픈소스입니다.
 
 ## 참고한 생태계와 개선점
 
@@ -16,9 +16,16 @@
 writer-forge genres
 writer-forge init --genre screenplay --title "나의 영화" --out screenplay.json
 writer-forge init --genre fantasy --title "새 세계" --out fantasy.json
+writer-forge init --genre resume --title "홍길동 이력서"
+writer-forge count draft.md
+writer-forge flow draft.md
+writer-forge hints draft.md
+writer-forge backup draft.md
 ```
 
 각 프로젝트에는 로그라인, 등장인물, 장면/챕터 구조, 세계관 메모, 독창성·참고자료 기록이 들어갑니다. AI adapter를 추가하더라도 사용자 아이디어와 참고자료를 분리하고, 살아 있는 작가의 문체 모방을 기본값으로 제공하지 않습니다.
+
+`count`는 글자 수·단어 수·줄 수를 계산하고, `flow`는 반복 문장을 찾아 흐름을 점검하며, `hints`는 주제에 맞춘 오감·의성어·의태어 표현 출발점을 제공합니다. `backup`은 원본을 시간표시가 붙은 백업 파일로 복사합니다. AI가 쓴 티를 숨기는 기능 대신 사실과 경험을 구체화해 글의 개성을 살리는 방향을 사용합니다.
 
 ## License
 
