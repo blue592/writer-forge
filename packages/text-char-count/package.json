@@ -1,0 +1,14 @@
+{
+  "name": "@writer-forge/text-char-count",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "exports": "./index.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "license": "MIT"
+}
